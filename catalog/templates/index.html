@@ -20,4 +20,8 @@
     <li><strong>Books containing "{{ word }}":</strong> {{ filtered_books_count }}</li>
     <li><strong>Genres containing "{{ word }}":</strong> {{ filtered_genres_count }}</li>
   </ul>
+
+  <p>
+    You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.
+  </p>
 {% endblock %}
