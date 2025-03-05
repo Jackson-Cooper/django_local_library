@@ -9,4 +9,5 @@ urlpatterns = [
     path('authors/', views.AuthorListView.as_view(), name='authors'),
     # the detail view for the specific author with a primary key field named <id>
     path('author/<int:pk>', views.AuthorDetailView.as_view(), name='author-detail'),
+    path('mybooks/', views.LoanedBooksByUserListView.as_view(), name='my-borrowed'),
 ]
