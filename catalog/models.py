@@ -68,6 +68,11 @@ class Book(models.Model):
     display_genre.short_description = 'Genre'
 
 
+"""class Language(models.model):
+    Model representing a language.
+    code = models.CharField(max_length=2, unique=True)  # Ex: 'en', 'fr'
+    name = models.CharField(max_length=50)"""
+
 import uuid # Required for unique book instances
 
 class BookInstance(models.Model):
